@@ -126,7 +126,74 @@ Scotland                 Singapore       Yemen Arab Republic (North)
 (Other) 
 31 
 summary(acs2017_ny$BPL[acs2017_ny$DEGFIELD =='Liberal Arts and Humanities'])
-  
+New York                 India                   West Indies 
+432                        38                        26 
+New Jersey            Pennsylvania              Massachusetts 
+14                        14                        13 
+SOUTH AMERICA        Other USSR/Russia          Connecticut 
+13                        13                        10 
+Illinois                China                     Japan 
+10                        10                        10 
+Philippines             AFRICA                  Maryland 
+8                         8                         7 
+California             Florida               North Carolina 
+6                         6                         6 
+Puerto Rico            Canada                     Korea 
+6                         6                         6 
+Colorado               Michigan                  Virginia 
+5                         5                         5 
+Poland                 Georgia                   Indiana 
+5                         4                         4 
+Minnesota                Ohio                     Texas 
+4                         4                         4 
+France                   Italy                   Germany 
+4                         4                         4 
+Montana                 Oregon              Rhode Island 
+3                         3                         3 
+Wisconsin               Mexico           Central America 
+3                         3                         3 
+Cuba                   England                Europe, ns 
+3                         3                         3 
+Israel/Palestine       Alabama           District of Columbia 
+3                         2                         2 
+Kansas                 Missouri            United Kingdom, ns 
+2                         2                         2 
+Ireland                 Albania                    Iran 
+2                         2                         2 
+Arizona                  Iowa                  Kentucky 
+1                         1                         1 
+Maine                New Hampshire            South Carolina 
+1                         1                         1 
+Tennessee                Utah                    Greece 
+1                         1                         1 
+Austria            Czechoslovakia                Romania 
+1                         1                         1 
+Yugoslavia             Singapore                 Vietnam 
+1                         1                         1 
+Afghanistan            Lebanon              Asia, nec/ns 
+1                         1                         1 
+Australia & New Zealand  Alaska                  Arkansas 
+1                         0                         0 
+Delaware               Hawaii                     Idaho 
+0                         0                         0 
+Louisiana             Mississippi                Nebraska 
+0                         0                         0 
+Nevada                New Mexico              North Dakota 
+0                         0                         0 
+Oklahoma              South Dakota               Vermont 
+0                         0                         0 
+Washington            West Virginia             Wyoming 
+0                         0                         0 
+Native American      United States, ns       American Samoa 
+0                         0                         0 
+Guam               U.S. Virgin Islands      Other US Possessions 
+0                         0                         0 
+St. Pierre & Miquelon Atlantic Islands         North America, ns 
+0                         0                         0 
+Americas, n.s.        Denmark                   Finland 
+0                         0                         0 
+(Other) 
+0 
   
   
   
