@@ -212,6 +212,42 @@ In this subset, there are 45,803 people who live in NYC and are between the ages
 
 
 #The following code will give us the number of people who majored in the respective fields in NYC, ages 18 to 65. 
-summary(In_NYC$DEGFIELD)
+summary(In_NYC$DEGFIELD=='Business')
+Mode      FALSE    TRUE 
+logical   42307    3496 
+summary(In_NYC$DEGFIELD=='Liberal Arts and Humanities')
+Mode      FALSE    TRUE 
+logical   45496     307 
+
+There are 3,496 people in NYC between the ages of 18 and 65 who have a business degree.
+There are 307 people in NYC between the ages of 18 and 65 who have a liberal arts and humanities degree.
+
+GENDER:
+  
+> summary(In_NYC$SEX[In_NYC$DEGFIELD =='Business'])
+Male Female 
+1722   1774 
+> summary(In_NYC$SEX[In_NYC$DEGFIELD =='Liberal Arts and Humanities'])
+Male Female 
+122    185 
+
+TOTAL HOUSEHOLD INCOME:
+  
+> summary(In_NYC$HHINCOME[In_NYC$DEGFIELD =='Business'])
+Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NAs 
+  -5900   73000  127400  166608  200000 1288300      11 
+> summary(In_NYC$HHINCOME[In_NYC$DEGFIELD =='Liberal Arts and Humanities'])
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NAs 
+0   58000  113000  139533  168000 1276200       2 
 
 
+USUAL HOURS WORKED PER WEEK:
+
+> summary(In_NYC$UHRSWORK[In_NYC$DEGFIELD =='Business'])
+Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00   35.00   40.00   38.24   50.00   99.00 
+> summary(In_NYC$UHRSWORK[In_NYC$DEGFIELD =='Liberal Arts and Humanities'])
+Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00   20.00   40.00   32.53   40.00   85.00
+
+Interestingly, the difference between the means is less than before. 
