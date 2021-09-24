@@ -40,25 +40,25 @@ Male Female
 316    463
 
 Total Household Income:
-'summary(acs2017_ny$HHINCOME[acs2017_ny$DEGFIELD =='Business'])'
+summary(acs2017_ny$HHINCOME[acs2017_ny$DEGFIELD =='Business'])
 Min.   1st Qu.  Median    Mean   3rd Qu.    Max.      NAs 
 -5900   75000   129400   174386  208000   1666000      95 
-'summary(acs2017_ny$HHINCOME[acs2017_ny$DEGFIELD =='Liberal Arts and Humanities'])'
+summary(acs2017_ny$HHINCOME[acs2017_ny$DEGFIELD =='Liberal Arts and Humanities'])
 Min.  1st Qu.  Median    Mean    3rd Qu.    Max.    NAs 
 0     58100    106100   142595   172500   1480100   16 
 
 Usual Hours Worked Per Week:
-'summary(acs2017_ny$UHRSWORK[acs2017_ny$DEGFIELD =='Business'])'
+summary(acs2017_ny$UHRSWORK[acs2017_ny$DEGFIELD =='Business'])
 Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 0.00   25.00   40.00   34.31   45.00   99.00 
-'summary(acs2017_ny$UHRSWORK[acs2017_ny$DEGFIELD =='Liberal Arts and Humanities'])'
+summary(acs2017_ny$UHRSWORK[acs2017_ny$DEGFIELD =='Liberal Arts and Humanities'])
 Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 0.00    0.00   35.00   26.88   40.00   85.00 
 
 Place of Birth: 
-'summary(acs2017_ny$BPL[acs2017_ny$DEGFIELD =='Business'])'
+summary(acs2017_ny$BPL[acs2017_ny$DEGFIELD =='Business'])
 
-'summary(acs2017_ny$BPL[acs2017_ny$DEGFIELD =='Liberal Arts and Humanities'])'
+summary(acs2017_ny$BPL[acs2017_ny$DEGFIELD =='Liberal Arts and Humanities'])
   
   
   
