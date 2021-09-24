@@ -57,7 +57,74 @@ Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 
 Place of Birth: 
 summary(acs2017_ny$BPL[acs2017_ny$DEGFIELD =='Business'])
-
+New York                 West Indies                     China 
+5838                         387                         357 
+India               SOUTH AMERICA                  New Jersey 
+285                         242                         222 
+Other USSR/Russia        Pennsylvania                 Philippines 
+187                         168                         124 
+AFRICA                  California               Massachusetts 
+120                          97                          97 
+Connecticut                Ohio                       Korea 
+90                          75                          75 
+Illinois             Central America                  Florida 
+57                          57                          56 
+Texas                      Poland                    Maryland 
+52                          47                          43 
+Germany                   Canada                    Michigan 
+42                          38                          37 
+North Carolina          Virginia                      France 
+34                          33                          33 
+Italy                 Puerto Rico           United Kingdom, ns 
+33                          32                          32 
+Mexico                    Japan                     Georgia 
+31                          29                          25 
+Missouri            Israel/Palestine                  Indiana 
+25                          24                          23 
+Wisconsin                Vietnam            Australia and New Zealand 
+21                          19                          19 
+District of Columbia     Albania                      Greece 
+18                          18                          18 
+Yugoslavia                 Turkey                   Minnesota 
+18                          18                          17 
+Colorado                   Vermont                     Romania 
+16                          16                          16 
+Nepal                  Washington                     England 
+16                          15                          15 
+Arizona                    Spain                  Rhode Island 
+14                          14                          13 
+South Carolina          Tennessee                  Asia, nec/ns 
+13                          13                          13 
+Delaware                 Louisiana                   Ireland 
+12                          12                          12 
+New Hampshire            Alabama                    Netherlands 
+11                          10                          10 
+Malaysia                 Nebraska                   Switzerland 
+10                           9                           9 
+Czechoslovakia           Kentucky                    Austria 
+9                           8                           8 
+Bulgaria                Indonesia                     Maine 
+8                           8                           7 
+Cuba                    Portugal                       Iran 
+7                           7                           7 
+Lebanon                  Kansas                    Mississippi 
+7                           6                           6 
+Oregon                     Utah                     Belgium 
+6                           6                           6 
+Hungary                  Alaska                      Hawaii 
+6                           5                           5 
+Iowa                     Montana                  New Mexico 
+5                           5                           5 
+Denmark                   Latvia                   Lithuania 
+5                           5                           5 
+Thailand                  Arkansas                South Dakota 
+5                           4                           4 
+West Virginia             Guam                      Sweden 
+4                           4                           4 
+Scotland                 Singapore       Yemen Arab Republic (North) 
+4                           4                           4 
+(Other) 
+31 
 summary(acs2017_ny$BPL[acs2017_ny$DEGFIELD =='Liberal Arts and Humanities'])
   
   
