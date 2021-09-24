@@ -198,6 +198,20 @@ Americas, n.s.        Denmark                   Finland
 (Other) 
 0 
   
+               *Standard error is a measure of the variability of a set of means and is caluclated by dividing the standard deviation by the square root of the sample size*
+
+Standard error for total household income (acs2017_ny data):
+x <- c(174386,142595)
+std_mean <- function(x) sd(x)/sqrt(length(x))
+> std_mean(x)
+[1] 15895.5
+
+Standard error for hours worked per week (acs2017_ny data):
+s <- c(34.31,26.88)
+std_mean(s)
+[1] 3.715
+
+
                 "Out of this dataset, the place with the highest number of births (sorry for weird phrasing) for both business degrees and liberal arts degree holders is New York."
 Therefore, it would be interesting to create a subgroup of people who live in NYC and are between the ages of 18 and 25 in order to exclude those who are retired. 
   
@@ -251,18 +265,7 @@ Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 
 Interestingly, the difference between the means is less than before.
 
-Standard error is a measure of the variability of a set of means and is caluclated by dividing the standard deviation by the square root of the sample size. 
-
-Standard error for total household income acs2017_ny data:
-x <- c(174386,142595)
-std_mean <- function(x) sd(x)/sqrt(length(x))
-> std_mean(x)
-[1] 15895.5
-
-Standard error for hours worked per week acs2017_ny data:
-s <- c(34.31,26.88)
-std_mean(s)
-[1] 3.715
+                                                            'We can also calculate the standard error for NYC Data!'
 
 Standard error for total household income In_NYC data:
 t <- c(166608,139533)
@@ -273,3 +276,4 @@ Standard error for hours worked per week In_NYC data:
 h <- c(38.24,32.53)
 > std_mean(h)
 [1] 2.855
+
