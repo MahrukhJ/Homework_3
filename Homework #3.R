@@ -1,4 +1,4 @@
-Homework #3
+Homework #2 (technically 3)
 
 1. What are the names of the people in your group?
   
@@ -26,5 +26,5 @@ mean(In_NYC$RENT[In_NYC$DEGFIELD =='Fine Arts'])
 mean(In_NYC$RENT[In_NYC$DEGFIELD =='Business'])
 [1] 1017.371
 
-
-
+#The following code will give us the number of people who majored in the respective fields in NYC, ages 18 to 65. 
+summary(In_NYC$DEGFIELD)
