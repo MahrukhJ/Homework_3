@@ -277,3 +277,13 @@ h <- c(38.24,32.53)
 > std_mean(h)
 [1] 2.855
 
+
+#What other outcomes could explain the difference in outcome?
+
+The difference in outcome for gender is not too significant since the proportion of male and female is divided roughly equally for both business and liberal art degrees. 
+
+The difference in outcome for total household income can be explained through family size, rent, or even area of residence!
+  
+The difference in outcome for usual hours worked per week can be explained through job prospect, area of residence, type of work, job responsibility. 
+
+
