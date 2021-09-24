@@ -249,4 +249,27 @@ Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 0.00   20.00   40.00   32.53   40.00   85.00
 
-Interestingly, the difference between the means is less than before. 
+Interestingly, the difference between the means is less than before.
+
+Standard error is a measure of the variability of a set of means and is caluclated by dividing the standard deviation by the square root of the sample size. 
+
+Standard error for total household income acs2017_ny data:
+x <- c(174386,142595)
+std_mean <- function(x) sd(x)/sqrt(length(x))
+> std_mean(x)
+[1] 15895.5
+
+Standard error for hours worked per week acs2017_ny data:
+s <- c(34.31,26.88)
+std_mean(s)
+[1] 3.715
+
+Standard error for total household income In_NYC data:
+t <- c(166608,139533)
+> std_mean(t)
+[1] 13537.5
+
+Standard error for hours worked per week In_NYC data:
+h <- c(38.24,32.53)
+> std_mean(h)
+[1] 2.855
