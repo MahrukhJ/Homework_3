@@ -280,10 +280,41 @@ h <- c(38.24,32.53)
 
 #What other outcomes could explain the difference in outcome?
 
-The difference in outcome for gender is not too significant since the proportion of male and female is divided roughly equally for both business and liberal art degrees. 
+The difference in outcome for 'gender' is not too significant since the proportion of male and female is divided roughly equally for both business and liberal art degrees. 
+The difference in outcome for 'total household income' can be explained through family size, rent, or even area of residence!
+The difference in outcome for 'usual hours worked per week' can be explained through job growth, area of residence, type of work, job responsibility. 
 
-The difference in outcome for total household income can be explained through family size, rent, or even area of residence!
-  
-The difference in outcome for usual hours worked per week can be explained through job prospect, area of residence, type of work, job responsibility. 
+#What additional evidence would you look at? What conclusions could you draw from that? If you were to try to persuade someone, imagine what evidence would be required to persuade a person with the opposite view?
+Additional evidence we can look at to explain the difference in outcome is narrowing down our data een further. 
+The current data compares people who have a degree in business with people who have a degree in liberal arts and humanities. I observed the difference between gender, total household income, the usual number of hours worked per week and place of birth.
+Noticing that majority of the data was coming from New York, I created a subgroup of residents from New York City who are between ages 18 & 65 (in order to avoid those retired) and I compared the same variables(gender, total household income, hours worked per week) between the subgroup.
+Additional variables I can add to the subgroup to draw more specifics is race and borough. 
 
+#For instance: the following code will give me the mean Income for the people living in NYC, aged from 18-65, with a degree in Business, female, of Hispanic origin and in the laborforce.
 
+mean(In_NYC$INCWAGE[DEGFIELD=="Business" & female==1 & Hispanic & LABFORCE==2])
+[1] 51393.12
+
+#We can do the same thing for males.
+> mean(In_NYC$INCWAGE[DEGFIELD=="Business" & female==0 & Hispanic & LABFORCE==2])
+[1] 85745.68
+
+Keeping in line with the work we have already done, we can find the mean for total household income.
+> mean(In_NYC$HHINCOME[DEGFIELD=="Business" & female==1 & Hispanic & LABFORCE==2])
+[1] 112568.6
+> mean(In_NYC$HHINCOME[DEGFIELD=="Business" & female==0 & Hispanic & LABFORCE==2])
+[1] 159138.9
+
+^This gives us an interesting result: the average household income for women aged 18-65 living in NYC with a business degree and are of Hispanic origin and are in the laborforce is $46,570.3 less than the average
+    household income for men aged 18-65 also living in NYC with a business degree, are of Hispanic origin and in the labor force. 
+
+We can just as easily compare the # of hours worked per week too!
+> mean(In_NYC$UHRSWORK[DEGFIELD=="Business" & female==1 & Hispanic & LABFORCE==2])
+[1] 38.46154
+> mean(In_NYC$UHRSWORK[DEGFIELD=="Business" & female==0 & Hispanic & LABFORCE==2])
+[1] 40.9321
+mean(In_NYC$UHRSWORK[DEGFIELD=="Liberal Arts and Humanities" & female==1 & Hispanic & LABFORCE==2])
+[1] 37.125
+mean(In_NYC$UHRSWORK[DEGFIELD=="Liberal Arts and Humanities" & female==0 & Hispanic & LABFORCE==2])
+[1] NA
+Narrowing down the data would surely convince someone of the opposite view! 
