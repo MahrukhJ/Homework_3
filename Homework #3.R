@@ -22,9 +22,9 @@ summary(acs2017_ny$DEGFIELD=='Liberal Arts and Humanities')
 Mode   FALSE    TRUE 
 logical  195806     779 
 
-This tells us that there are 9802 people with a degree in Business and 779 people with a degree in Liberal Arts and Humanities. 
+                This tells us that there are 9802 people with a degree in Business and 779 people with a degree in Liberal Arts and Humanities. 
 
-I think it would be interesting to compare gender(SEX), total household income(HHINCOME), usual hours worked per week(UHRSWORK), and birthplace (BPL) between the 2 degrees.
+I think it would be interesting to compare "gender(SEX), total household income(HHINCOME), usual hours worked per week(UHRSWORK), and birthplace (BPL)" between the 2 degrees.
 
 #Gender:
 summary(acs2017_ny$SEX[acs2017_ny$DEGFIELD =='Business'])
@@ -34,6 +34,9 @@ summary(acs2017_ny$SEX[acs2017_ny$DEGFIELD =='Liberal Arts and Humanities'])
 Male Female 
 316    463
 
+                                                            Business Degree:                  45.43% women
+                                                            Liberla Arts & Humanities Degree: 59.44% women
+
 #Total Household Income:
 summary(acs2017_ny$HHINCOME[acs2017_ny$DEGFIELD =='Business'])
 Min.   1st Qu.  Median    Mean   3rd Qu.    Max.      NAs 
@@ -42,6 +45,8 @@ summary(acs2017_ny$HHINCOME[acs2017_ny$DEGFIELD =='Liberal Arts and Humanities']
 Min.  1st Qu.  Median    Mean    3rd Qu.    Max.    NAs 
 0     58100    106100   142595   172500   1480100   16 
 
+                              Interestingly, the average household income difference between business and liberal arts/humanities degree is ~$32,000.
+
 #Usual Hours Worked Per Week:
 summary(acs2017_ny$UHRSWORK[acs2017_ny$DEGFIELD =='Business'])
 Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
@@ -49,6 +54,8 @@ Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 summary(acs2017_ny$UHRSWORK[acs2017_ny$DEGFIELD =='Liberal Arts and Humanities'])
 Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 0.00    0.00   35.00   26.88   40.00   85.00 
+
+                         A person with a business degree will work an average of 34.31 hours in a week and a person with a liberal arts degree will work an average of 26.88.
 
 #Place of Birth: 
 summary(acs2017_ny$BPL[acs2017_ny$DEGFIELD =='Business'])
@@ -191,8 +198,8 @@ Americas, n.s.        Denmark                   Finland
 (Other) 
 0 
   
-  
-
+                "Out of this dataset, the place with the highest number of births (sorry for weird phrasing) for both business degrees and liberal arts degree holders is New York."
+Therefore, it would be interesting to create a subgroup of people who live in NYC and are between the ages of 18 and 25 in order to exclude those who are retired. 
   
 #We want to focus on the people who live within NYC and are between the ages of 18 and 65, so we can create a subset. 
 In_NYC <- subset(acs2017_ny, (acs2017_ny$in_NYC == 1)&(acs2017_ny$AGE > 18) & (acs2017_ny$AGE < 66))
